@@ -1,0 +1,20 @@
+{
+  "name": "attackscout",
+  "version": "0.1.0",
+  "description": "AttackScout en ligne de commande : audit public d'un domaine (note A-F, SSL, DNS, e-mail, échéances). AttackScout command line: public domain audit.",
+  "license": "MIT",
+  "type": "module",
+  "bin": { "attackscout": "bin/attackscout.js" },
+  "files": ["bin", "src", "README.md", "LICENSE"],
+  "engines": { "node": ">=20" },
+  "keywords": ["attackscout", "security", "ssl", "dns", "spf", "dmarc", "dkim", "audit", "cli"],
+  "homepage": "https://attackscout.com",
+  "scripts": {
+    "test": "vitest run",
+    "coverage": "vitest run --coverage"
+  },
+  "devDependencies": {
+    "@vitest/coverage-v8": "4.1.12",
+    "vitest": "4.1.12"
+  }
+}
